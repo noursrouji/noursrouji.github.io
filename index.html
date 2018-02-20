@@ -101,7 +101,7 @@ body {
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity"><label id="tagline" class="welcome-tag-line"></label></span>
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><label id="tagline" class="welcome-tag-line"></label></span>
 <!-- 	Nour <span class="w3-hide-small"></span> Srouji -->
   </div>
 </div>
@@ -112,22 +112,19 @@ body {
   <p class="w3-center"><em>I love to code!!! </em>
 
   <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column w3-hide-small " style="background-color:#aaa;">
     <h2>IT IS FUN.</h2>
     <p> The sense of accomplishment when solving a really complicated problem cannot be beat! 
   It just feels as if you have been at the best party in town.</p>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>IF I CAN THINK IT, I CAN MAKE IT A REALITY.</h2>
-    <p>In programming if you can consistently create a logic that interacts with the other parts of the computer 
-  and other applications you can make it happen. 
-  All you need to do after you thought it up is actually write it and presto a new thing is created into the world. That really feels like being a wizard.</p>
-  </p>
+  <div class="column w3-hide-small  style="background-color:#bbb;">
+    <h2>I CAN MAKE IT A REALITY.</h2>
+    <p>One of most satisfying aspects of the job as a programmer is seeing code you wrote 
+	deployed in a live system and used by actual people. </p>
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>It make a difference in peoples' lives.</h2>
-    <p>When I manage to build something that saves people time and prevents them from doing tedious tasks, I know that
-  I am making a difference in that person’s life.</p>
+  <div class="column w3-hide-small " style="background-color:#ccc;">
+    <h2>It makes a difference.</h2>
+    <p>Build something that saves people time and prevents them from doing tedious tasks.</p>
   </div>
 </div>
 
@@ -140,14 +137,17 @@ body {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>NOUR SROUJI</b></p><br>
-      <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="developer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="w3-col m6 w3-padding-large">
+	<br/><br/><br/>
+	
+      <p>Welcome to my website. I am a software developer with a strong academic background in various languages using hands-on experience. 
+	  Good at understanding 
+	  and learning newer technologies. I have the ability to multi-task and manage priorities effectively, use creative and innovative skills to 
+	  achieve results.</p>
     </div>
   </div>
 <!--   <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
@@ -233,7 +233,7 @@ body {
     </div>
     <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
   </div>
-</div> --> -->
+</div> --> 
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -350,7 +350,7 @@ function toggleFunction() {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <script>
                     // set up text to print, each item in array is new line
-                    var tagArray = new Array("Hello, I'm Nour.","I'm a Software Developer");
+                    var tagArray = new Array("Hello, I'm Nour.","I'm a Software","	Developer");
                     var iSpeed = 200; // time delay of print out
                     var iIndex = 0; // start printing array at this posision
                     var iArrLength = tagArray[0].length; // the length of the text array
