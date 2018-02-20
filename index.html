@@ -59,12 +59,30 @@ body {
   <h2>Scroll Down</h2>
   <p>Scroll down to see the sticky effect.</p>
 
-<video width="320" height="240" autoplay loop>
+<!-- <video width="320" height="240" autoplay loop>
   <source src="sea.mp4" type="video/mp4" />
   <source src="sea.ogg" type="video/ogg" />
   Your browser does not support the video tag.
-</video>
+</video> -->
 </div>
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
 
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
