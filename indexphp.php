@@ -427,88 +427,20 @@ h1 {
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-
-      <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-Style The Contact Form How Ever You Prefer -->
-<!--<link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css"> -->
-
-<!-- <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-action="https://script.google.com/macros/s/AKfycbzV2cQ-4UEkrqLECHLssNmu3sKA_vf7YthrWl5zmoYIT4XgtQ0/exec">
- change the form action to your script url -->
-<!--
- <fieldset class="pure-group">
-   <label for="name">Name: </label>
-   <input id="name" name="name" placeholder="What your Mom calls you" />
- </fieldset>
-
- <fieldset class="pure-group">
-   <label for="message">Message: </label>
-   <textarea id="message" name="message" rows="10"
-   placeholder="Tell us what's on your mind..."></textarea>
- </fieldset>
-
- <fieldset class="pure-group">
-   <label for="email"><em>Your</em> Email Address:</label>
-   <input id="email" name="email" type="email" value=""
-   required placeholder="your.name@email.com"/>
-   <span id="email-invalid" style="display:none">
-     Must be a valid email address</span>
- </fieldset>
-
- <fieldset class="pure-group">
-   <label for="color">Favourite Color: </label>
-   <input id="color" name="color" placeholder="green" />
- </fieldset>
-
- <button class="button-success pure-button button-xlarge">
-   <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
-</form> -->
-
-<!-- Customise the Thankyou Message People See when they submit the form: -->
-<!-- <div style="display:none;" id="thankyou_message">
- <h2><em>Thanks</em> for contacting us!
-   We will get back to you soon!</h2>
-</div> -->
-
-<!-- Submit the Form to Google Using "AJAX" -->
-<!-- <script data-cfasync="false" type="text/javascript"
-src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
-<!-- <script data-cfasync="false" type="text/javascript"
-src="/form-submission-handler.js"></script> -->
-<!-- END -->
-<!--
-class="pure-form pure-form-stacked" data-email="example@email.net" -->
-      <form id="gform" method="POST"
-      action="https://script.google.com/macros/s/AKfycbzV2cQ-4UEkrqLECHLssNmu3sKA_vf7YthrWl5zmoYIT4XgtQ0/exec">
+      <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required id="name" name="name">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
           </div>
           <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required id="email" name="email">
-            <span id="email-invalid" style="display:none">
-              Must be a valid email address</span>
-          </div><br/>
-            <input class="w3-input w3-border" type="text" placeholder="Message" required id="message" name="message">
-
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
         </div>
-
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-        <!-- Customise the Thankyou Message People See when they submit the form: -->
-
       </form>
-      <div style="display:none;" id="thankyou_message">
-       <h2><em>Thanks</em> for contacting me!
-         I will get back to you soon!</h2>
-      </div>
-      <script data-cfasync="false" type="text/javascript"
-      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
-
     </div>
   </div>
 </div>
