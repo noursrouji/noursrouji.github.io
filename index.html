@@ -24,19 +24,19 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('giphy.gif');
+    background-image: url('images/giphy.gif');
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("coffee.jpg");
+    background-image: url("images/coffee.jpg");
     min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url("code.jpg");
+    background-image: url("images/code.jpg");
     min-height: 400px;
 }
 
@@ -151,9 +151,9 @@ h1 {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
-    </a>
+    </a> -->
   </div>
 
   <!-- Navbar on small screens -->
@@ -161,7 +161,7 @@ h1 {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
   </div>
 </div>
 
@@ -179,7 +179,7 @@ h1 {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
       <p><b><i class="fa fa-user w3-margin-right"></i>NOUR SROUJI</b><br/><a href="NourSrouji.pdf" download>Download Resume</a></p><br>
-      <img src="developer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="images/developer.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -491,6 +491,7 @@ class="pure-form pure-form-stacked" data-email="example@email.net" -->
             <span id="email-invalid" style="display:none">
               Must be a valid email address</span>
           </div><br/>
+          <br>
             <input class="w3-input w3-border" type="text" placeholder="Message" required id="message" name="message">
 
         </div>
@@ -505,9 +506,11 @@ class="pure-form pure-form-stacked" data-email="example@email.net" -->
        <h2><em>Thanks</em> for contacting me!
          I will get back to you soon!</h2>
       </div>
-      <script data-cfasync="false" type="text/javascript"
-      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+      <!-- <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
 
+  <script data-cfasync="false" type="text/javascript"
+      src="form-submission-handler.js"></script>
 
     </div>
   </div>
