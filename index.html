@@ -3,312 +3,11 @@
 <title>Nour Srouji</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="w3.css" title="external style sheet">
+<link rel="stylesheet" href="lato.css" title="external style sheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('images/tw.gif');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("images/coffee.jpg");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("images/code.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-    }
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f1f1f1;
-    /* padding: 20px; */
-    font-family: Arial;
-}
-
-/* Center website */
-.main {
-    max-width: 1000px;
-    margin: auto;
-}
-
-h1 {
-    font-size: 50px;
-    word-break: break-all;
-}
-
-.row {
-    margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 33.33%;
-    display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: white;
-    padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-.openBtn {
-    background: #f1f1f1;
-    border: none;
-    padding: 10px 15px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.openBtn:hover {
-    background: #bbb;
-}
-
-.overlay {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-}
-
-.overlay-content {
-    position: relative;
-     top: 10%;
-    width: 80%;
-    text-align: center;
-    margin-top: 30px;
-    margin: auto;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: white;
-}
-
-.overlay .closebtn:hover {
-    color: #ccc;
-}
-
-.overlay input[type=text] {
-    padding: 15px;
-    font-size: 17px;
-    border: none;
-    float: left;
-    width: 80%;
-    background: white;
-}
-
-.overlay input[type=text]:hover {
-    background: #f1f1f1;
-}
-
-.overlay button {
-    float: left;
-    width: 20%;
-    padding: 15px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-}
-
-.overlay button:hover {
-    background: #bbb;
-}
-
-/* .......Slide Show ...... */
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
+<link rel="stylesheet" href="styles.css" title="external style sheet">
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -321,9 +20,7 @@ img {vertical-align: middle;}
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a> -->
+
   </div>
 
   <!-- Navbar on small screens -->
@@ -331,7 +28,7 @@ img {vertical-align: middle;}
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+
   </div>
 </div>
 
@@ -406,100 +103,72 @@ img {vertical-align: middle;}
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
   <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of the projects I worked on.</em></p><br>
+  <p class="w3-center"><em>Here are some of the projects I worked on.</em></p>
+  <p class="w3-center" style="color:red">Click the image for more information !</p>
 
 <div id="myOverlay" class="overlay">
   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
   <div class="overlay-content">
-    Carpet cleaning desktiop application dhbvivhdsbvhjvbhewbvuijkne vbwiyvknjwevbiewnkv  hewbvnjkewvjnkwl vbwklvjkvvev
-     dhbvivhdsbvhjvbhewbvuijkne vbwiyvknjwevbiewnkv  hewbvnjkewvjnkwl vbwklvjkvvev
-      dhbvivhdsbvhjvbhewbvuijkne vbwiyvknjwevbiewnkv  hewbvnjkewvjnkwl vbwklvjkvvev
+    •	Desktop application for a Carpet cleaning business, using C# and SQL server
+    •	Wrote queries to create, read, insert and update database
+    •	Designed database tables to store application data
+    •	Add, update new customers or services
+    •	Search for any customer using phone number or going through a list of names
+    • Browse the history of orders and details for each customer that will decrease search time by 40%
+    •	Make a new invoice for the customer that saves customer and invoice information in database and browse the customer order history
+    •	Added a print button for invoices .
 
   </div>
 </div>
 <div id="myOverlay1" class="overlay">
   <span class="closebtn" onclick="closeSearch1()" title="Close Overlay">×</span>
   <div class="overlay-content">
-    travel experts profile blah
-      ife7tbhvdsfukgyejbhv xcvfgdsuiejkbvdx cbuifglejkbdvz uigfeakvjbdz duigfoeakvjbd zkdfugoeiabvjkd ,zvkduigfoeavkjb ,zdkligoafblzk jvdliogeavblj zvduog
+    • Profile page for the customers of Travel Experts agency, using ASP.NET and SQL server
+    • The user can view their order history and the total owing
+    • They can update their personal information .
   </div>
 </div>
 <div id="myOverlay2" class="overlay">
   <span class="closebtn" onclick="closeSearch2()" title="Close Overlay">×</span>
   <div class="overlay-content">
-    travel experts php/html blah
-      ife7tbhvdsfukgyejbhv xcvfgdsuiejkbvdx cbuifglejkbdvz uigfeakvjbdz duigfoeakvjbd zkdfugoeiabvjkd ,zvkduigfoeavkjb ,zdkligoafblzk jvdliogeavblj zvduog
+    Website for travel agency using HTML/CSS , javascript and PHP. The customer can view several packages pulled from the database using MYSql
+    and book it.
+
   </div>
+
 </div>
 <div id="myOverlay3" class="overlay">
   <span class="closebtn" onclick="closeSearch3()" title="Close Overlay">×</span>
   <div class="overlay-content">
-    Asp temperature converter blah
-      ife7tbhvdsfukgyejbhv xcvfgdsuiejkbvdx cbuifglejkbdvz uigfeakvjbdz duigfoeakvjbd zkdfugoeiabvjkd ,zvkduigfoeavkjb ,zdkligoafblzk jvdliogeavblj zvduog
+    • Temperature Converter using ASP.net
+    • The user selects input temperature units to specified output temperature applies the conversion factor to the input signal.
   </div>
 </div>
 
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext"  style="color:red">1 / 10</div>
-  <img src="images/carpet/main.png" style="width:100%" onclick="openSearch()">
-  <div class="text"  style="color:red">Click on the image for more information !</div>
+  <div class="numbertext"  style="color:red">1 / 4</div>
+  <img src="images/carpet.jpg" style="width:100%" onclick="openSearch()">
+ <!-- <div class="text"  style="color:red">Click on the image for more information !</div> -->
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext" style="color:red">2 / 10</div>
-  <img src="images/carpet/newinvoice.png" style="width:100%">
-  <div class="text"  style="color:red"></div>
-</div>
-<!-- <button class="openBtn" onclick="openSearch()">Open Search Box</button> -->
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">3 / 10</div>
-  <img src="images/carpet/invoicehistory.png" style="width:100%">
-  <div class="text"  style="color:red"></div>
-</div>
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">4/ 10</div>
-  <img src="images/carpet/products.png" style="width:100%" >
-  <div class="text"  style="color:red"></div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">5 / 10</div>
-  <img src="images/carpet/customer.png" style="width:100%">
-  <div class="text"  style="color:red"></div>
-</div>
-<!-- <button class="openBtn" onclick="openSearch()">Open Search Box</button> -->
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">6 / 10</div>
+  <div class="numbertext"  style="color:red">2 / 4</div>
   <img src="images/asptravel/profile.png" style="width:100%" onclick="openSearch1()">
-  <div class="text"  style="color:red">Click on the image for more information !</div>
+  <!-- <div class="text"  style="color:red">Click on the image for more information !</div> -->
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"  style="color:red">3 / 4</div>
+  <img src="images/travel.jpg" style="width:100%" onclick="openSearch2()">
+  <!-- <div class="text"  style="color:red">Click on the image for more information !</div> -->
 </div>
 <div class="mySlides fade">
-  <div class="numbertext"  style="color:red">7 / 10</div>
+  <div class="numbertext"  style="color:red">4 / 4</div>
   <img src="images/aspconverter.png" style="width:100%" onclick="openSearch3()">
-  <div class="text"  style="color:red">Click on the image for more information !</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">8/ 10</div>
-  <img src="images/travelphp/packagesslides.png" style="width:100%" onclick="openSearch2()">
-  <div class="text"  style="color:red">Click on the image for more information !</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">9/ 10</div>
-  <img src="images/travelphp/packagescolumns.png" style="width:100%">
-  <div class="text"  style="color:red"></div>
-</div>
-<!-- <button class="openBtn" onclick="openSearch()">Open Search Box</button> -->
-
-<div class="mySlides fade">
-  <div class="numbertext"  style="color:red">10 / 10</div>
-  <img src="images/travelphp/travelme.png" style="width:100%">
-  <div class="text"  style="color:red"></div>
+  <!-- <div class="text"  style="color:red">Click on the image for more information !</div> -->
 </div>
 
 <a class="prev" style="color:red" onclick="plusSlides(-1)">&#10094;</a>
@@ -513,8 +182,7 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
+
 </div>
 
 </div>
@@ -572,9 +240,6 @@ img {vertical-align: middle;}
        <h2><em>Thanks</em> for contacting me!
          I will get back to you soon!</h2>
       </div>
-      <!-- <script data-cfasync="false" type="text/javascript"
-      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
-
   <script data-cfasync="false" type="text/javascript"
       src="form-submission-handler.js"></script>
 
@@ -596,204 +261,7 @@ img {vertical-align: middle;}
   <p><i class="fa fa-copyright"></i> 2018, NOUR SROUJI </p>
 </footer>
 
-<!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(51.044270, -114.062019);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  google.maps.event.addListener(marker, 'click', function () {
-        var lng = "points[i].longitue",
-            lat = points[i].latitude;
-        alert( lat + "-" + lng );
-    });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+<script src="myscripts.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbY-FksRNNd4CoHgj6cCBj0XgFMTxo2ic&callback=myMap"></script>
-<script>
-                    // set up text to print, each item in array is new line
-                    var tagArray = new Array("Hello, I'm Nour.","I'm a Software","	Developer");
-                    var iSpeed = 200; // time delay of print out
-                    var iIndex = 0; // start printing array at this posision
-                    var iArrLength = tagArray[0].length; // the length of the text array
-                    var iScrollAt = 20; // start scrolling up at this many lines
-                    var iTextPos = 0; // initialise text position
-                    var sContents = ''; // initialise contents variable
-                    var iRow; // initialise current row
-
-                    function typewriter()
-                    {
-                        sContents =  ' ';
-                        iRow = Math.max(0, iIndex-iScrollAt);
-                        var destination = document.getElementById("tagline");
-
-                        while ( iRow < iIndex )
-                        {
-                            sContents += tagArray[iRow++] + '<br />';
-                        }
-                        destination.innerHTML = sContents + tagArray[iIndex].substring(0, iTextPos) + "_";
-                        if ( iTextPos++ == iArrLength )
-                        {
-                            iTextPos = 0;
-                            iIndex++;
-                            if ( iIndex != tagArray.length )
-                            {
-                                iArrLength = tagArray[iIndex].length;
-                                setTimeout("typewriter()", 500);
-                            }
-                        }
-                        else
-                        {
-                            setTimeout("typewriter()", iSpeed);
-                        }
-                    }
-                    typewriter();
-                </script>
-
-                <script>
-                function openSearch() {
-                    document.getElementById("myOverlay").style.display = "block";
-                }
-                function closeSearch() {
-                    document.getElementById("myOverlay").style.display = "none";
-                }
-                function openSearch1() {
-                    document.getElementById("myOverlay1").style.display = "block";
-                }
-                function closeSearch1() {
-                    document.getElementById("myOverlay1").style.display = "none";
-                }
-                function openSearch2() {
-                    document.getElementById("myOverlay2").style.display = "block";
-                }
-                function closeSearch2() {
-                    document.getElementById("myOverlay2").style.display = "none";
-                }
-                function openSearch3() {
-                    document.getElementById("myOverlay3").style.display = "block";
-                }
-                function closeSearch3() {
-                    document.getElementById("myOverlay3").style.display = "none";
-                }
-                </script>
-
-<script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-
 </body>
 </html>
